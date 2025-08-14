@@ -1,5 +1,4 @@
--- kyri shiftlock toggle (ALT/ALT/RightCtrl) — cleanup + anti-spam + square icons
--- by GPT-5 Thinking
+-- kyri shiftlock toggle (ALT/ALT/RightCtrl)
 
 local Players = game:GetService("Players")
 local UIS     = game:GetService("UserInputService")
