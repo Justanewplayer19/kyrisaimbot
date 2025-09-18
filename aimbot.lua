@@ -14,12 +14,12 @@ do
     getgenv().kyri_aim = M -- export the module table
 
     -- config
-    local aimFOV = 80           -- pixels used only for first acquire
-    local smooth = 0.25         -- camera lerp speed (lower = faster)
+    local aimFOV = 80           -- pixels used only :P
+    local smooth = 0.25         -- camera lerp speed (lower = faster) haha larp
     local scanNPCsEverywhere = true
 
     -- state
-    local running = false       -- module loaded (GUI exists)
+    local running = false       -- module loaded 
     local locked  = false       -- currently locked on a target
     local gui, btn, ring, ringStroke
     local currentModel, currentHum, currentHRP
@@ -128,7 +128,7 @@ do
         end
         currentModel, currentHum, currentHRP = m, hum, hrp
 
-        -- sticky-until-death: stop locking when target dies/despawns; user must press Lock again
+        -- sticky until death
         deathConn = hum.Died:Connect(function()
             dropLock()
         end)
@@ -238,5 +238,5 @@ do
     end
     function M.kill(reason) destroyAll(reason) end
     function M.is_running() return running end
-    getgenv().kyri_aim_kill = M.kill -- optional external kill for v0.dev
+    getgenv().kyri_aim_kill = M.kill -- kill
 end
