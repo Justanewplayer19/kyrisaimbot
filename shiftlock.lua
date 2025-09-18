@@ -1,4 +1,4 @@
--- kyri shiftlock toggle (ALT/ALT/RightCtrl)
+-- kyri shiftlock toggle (ALT/ALT/RightCtrl) mostly for uts cuz i fucking hate that they dont have shift lock
 
 local Players = game:GetService("Players")
 local UIS     = game:GetService("UserInputService")
@@ -11,8 +11,8 @@ getgenv().KYRI_SHIFTLOCK = getgenv().KYRI_SHIFTLOCK or {}
 local M = getgenv().KYRI_SHIFTLOCK
 
 -- internal state
-local running = false        -- module loaded (GUI exists)
-local active  = false        -- lock is ON
+local running = false        -- module loaded )
+local active  = false        -- lock is on
 local gui, btn, cursor
 local stepConn, inputConn, charConn
 local debounceUntil = 0
